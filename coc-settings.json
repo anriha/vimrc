@@ -1,0 +1,21 @@
+{
+    "python.jediEnabled": false,
+    "python.linting.pep8Args": ["--max-line-length=119"],
+    "python.linting.flake8Args": ["--max-line-length=119"],
+    "python.linting.pylintArgs": ["--generate-members"],
+    "python.autoComplete.extraPaths": ["/home/anriha/.local/lib/python3.8/site-packages/"],
+    "python.linting.mypyEnabled": true,
+    "languageserver": {
+      "ccls": {
+        "command": "ccls",
+        "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+        "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+        "initializationOptions": {
+           "cache": {
+             "directory": "/tmp/ccls"
+           }
+         }
+      }
+    }
+
+}
